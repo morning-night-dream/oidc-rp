@@ -25,6 +25,10 @@ export const authOptions = {
         idToken: true,
         clientId: process.env.OP_CLIENT_ID,
         clientSecret: process.env.OP_CLIENT_SECRET,
+        client: {
+          authorization_signed_response_alg: 'HS256',
+          id_token_signed_response_alg: 'HS256',
+        },
     },
   ],
 };
