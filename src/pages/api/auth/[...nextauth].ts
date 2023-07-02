@@ -14,7 +14,6 @@ export const authOptions = {
         token: process.env.OP_URL + '/op/token',
         authorization: process.env.OP_URL + '/op/authorize?response_type=code',
         userInfo: process.env.OP_URL + '/op/userinfo',
-        checks: ['nonce' as const],
         profile: (profile : any) => {
           return {
             id: profile.sub,
