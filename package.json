@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "eslint src --ext .js,jsx,.ts,.tsx --fix",
-    "local": "cp env.example env.local"
+    "local": "cp .env.example .env.local"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.1",
