@@ -5,7 +5,7 @@ export default function LoginPage() {
   const session = useSession();
 
   if (session.status === 'authenticated') {
-    return <Text fontSize='5xl'>Welcome!</Text>
+    return <Text fontSize='5xl'>Welcome! {session.data.user?.name}</Text>
   }
 
   return (
